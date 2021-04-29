@@ -50,7 +50,7 @@ class MessageM {
         $request->bindValue(':id', $id);
         $request->execute();
         $message_data = $request->fetch();
-        $message = new Message();
+        $message = new message();
         if($message_data) {
             $message->setId($message_data['id']);
             $message->setMessage($message_data['message']);

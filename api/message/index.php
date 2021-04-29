@@ -7,8 +7,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Manager/UserM.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Manager/MessageM.php';
 
 
-use MiniChat\Entity\Message;
-use MiniChat\Manager\MessageM;
+use MinichatProjet\Entity\Message;
+use MinichatProjet\Manager\MessageM;
 
 header('Content-Type: application/json');
 
