@@ -1,1 +1,1 @@
-# MinichatProjet
+# projet-minichat

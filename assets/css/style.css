@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: grey;
+}
+#connection_registration {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.width100 {
+    width: 100%;
+}
+
+#buttonConnection, #buttonRegistration {
+    margin: 200px 100px;
+    padding: 20px;
+    font-size: 60px;
+    border-radius: 80px;
+    border: none;
+
+}
+
+#miniChat, #miniChat2 {
+    margin : 10px 0 10px 0;
+    color: #000000;
+    font-size: 60px;
+}
+
+#miniChat {
+    margin-left: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#miniChat2 {
+    font-size: 45px;
+    position: absolute;
+    left: 40px;
+}
+
+#pseudoAccount {
+    font-size: 30px;
+    position: absolute;
+    right: 15%;
+    margin : 10px 0 10px 0;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 5px grey;
+    height: 80px;
+}
+
+#disconnection {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    right: 3%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#messagesGroup {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: #d4d4d4 1px solid;
+    width: 70%;
+    margin: auto;
+    height: 79vh;
+}
+
+.input-group {
+    width: 70%;
+    margin: auto;
+}
+
+.width20 {
+    width: 20%;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.text {
+    width: 85%;
+    margin: auto;
+}
+
+.messages {
+    padding: 20px 5px 20px 5px;
+    border-radius: 10px;
+    background-color: #f2f4f5;
+    margin: 10px;
+}
+
+.colorGrey {
+    color: #bcbcbc;
+}
+
+.colorBlue  {
+    color: #0d6efd;
+}
+
+.container {
+    margin-top: 5rem !important;
+}
+
+.alert {
+    text-align: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.modal2, #closeModal {
+    position: absolute;
+    z-index: 9999;
+}
+
+.modal2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#closeModal {
+    top: 2px;
+    right: 30px;
+    border: none;
+    background-color: grey;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: none;
+}
+
+#success {
+    background-color: lightgreen;
+}
+
+#error {
+    background-color: red;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 840px) {
+    #connection_registration {
+        flex-direction: column;
+    }
+    #buttonConnection, #buttonRegistration {
+        margin: 80px 100px;
+    }
+    #miniChat2 {
+        font-size: 30px;
+    }
+    #pseudoAccount {
+        font-size: 20px;
+    }
+    #messagesGroup, .input-group {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #buttonConnection, #buttonRegistration {
+        margin: 80px auto;
+        width: initial;
+    }
+    #miniChat {
+        font-size: 35px;
+    }
+    #pseudoAccount {
+        font-size: 15px;
+    }
+    #miniChat2 {
+        font-size: 20px;
+    }
+}
+
