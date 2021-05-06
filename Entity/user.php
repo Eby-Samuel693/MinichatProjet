@@ -9,7 +9,7 @@ class user {
     private ?string $email;
     private ?string $password;
 
-    public function __construct(int $id = null, string $pseudo = null, string $email = null, string $password = null) {
+    public function __construct(int $id, string $pseudo  , string $email , string $password ) {
         $this->id = $id;
         $this->pseudo = $pseudo;
         $this->email = $email;
@@ -19,7 +19,7 @@ class user {
     /**
      * @return int|null
      */
-    public function getId(): ?int {
+    public function getId(): int {
         return $this->id;
     }
 
@@ -33,7 +33,7 @@ class user {
     /**
      * @return string|null
      */
-    public function getPseudo(): ?string {
+    public function getPseudo(): string {
         return $this->pseudo;
     }
 
@@ -47,7 +47,7 @@ class user {
     /**
      * @return string|null
      */
-    public function getEmail(): ?string {
+    public function getEmail(): string {
         return $this->email;
     }
 
@@ -61,7 +61,7 @@ class user {
     /**
      * @return string|null
      */
-    public function getPassword(): ?string {
+    public function getPassword(): string {
         return $this->password;
     }
 

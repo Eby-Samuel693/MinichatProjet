@@ -43,5 +43,7 @@ class UserM {
             }
         }
         return $users;
+
     }
+
 }

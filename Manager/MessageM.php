@@ -1,9 +1,9 @@
 <?php
 
-namespace MiniChat\Manager;
+namespace MiniChatProjet\Manager;
 
 use MinichatProjet\Classes\DB;
-use MinichatProjet\Entity\user;
+use MiniChatProjet\Entity\user;
 use MinichatProjet\Entity\message;
 use MinichatProjet\Manager\UserM;
 use PDO;

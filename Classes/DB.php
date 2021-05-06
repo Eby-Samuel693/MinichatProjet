@@ -1,13 +1,14 @@
 <?php
 
-namespace MiniChat\Classes;
+
+namespace MiniChatProjet\Classes;
 
 use PDO;
 use PDOException;
 class DB {
 
     private string $server = 'localhost';
-    private string $db = 'mini-chat';
+    private string $db = 'mini_chat';
     private string $user = 'root';
     private string $pwd = '';
 
@@ -21,6 +22,7 @@ class DB {
             self::$dbInstance = new PDO("mysql:host=$this->server;dbname=$this->db;charset=utf8", $this->user, $this->pwd);
             self::$dbInstance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             self::$dbInstance->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
         }
         catch (PDOException $exception) {
             echo $exception->getMessage();
